@@ -34,9 +34,11 @@
 
     --radius: 0.5rem;
 
-    /* Custom colors not from shadcn */
+    /* Custom colors. Not from shadcn */
     --dark-gray: #212121;
-    --searchbar-gray: #4a4a4a;
+    --gray: #4a4a4a;
+
+    --green: #338715;
   }
 
   .dark {

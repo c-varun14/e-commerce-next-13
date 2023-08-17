@@ -19,10 +19,10 @@ type propsD = {
 const SearchBarComponent = forwardRef<HTMLInputElement | null, propsD>(
   function SearchBarComponent({ className }, ref) {
     return (
-      <section className={cn("hidden md:block w-10/12 md:w-96", className)}>
+      <section className={cn("hidden lg:block w-10/12 lg:w-96", className)}>
         <Command
           className={cn(
-            "w-full bg-[--searchbar-gray] relative  text-white focus-within:rounded-b-none overflow-visible rounded",
+            "w-full bg-[--gray] relative  text-white focus-within:rounded-b-none overflow-visible rounded",
             {
               "bg-[--dark-gray] static": !!className,
             }
@@ -67,7 +67,7 @@ const Searchbar = () => {
       />
 
       <Search
-        className={cn("h-5 w-5 text-gray-300 mx-auto md:hidden", {
+        className={cn("h-5 w-5 text-gray-300 mx-auto lg:hidden", {
           hidden: showSearchbarInMobile,
         })}
         onClick={() => {

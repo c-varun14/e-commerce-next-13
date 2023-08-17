@@ -12,7 +12,7 @@ type NavbarProps = {
 
 const Navbar = ({ name }: NavbarProps) => {
   return (
-    <nav className="w-full relative text-white h-14 bg-[--dark-gray] flex items-center justify-between p-2 lg:px-4 lg:h-20">
+    <nav className="fixed top-0 z-[2] w-full text-white bg-[--dark-gray] flex items-center justify-between p-2 lg:px-4">
       <div className="flex items-center">
         <Sidebar name={name} />
         <Image
@@ -24,7 +24,7 @@ const Navbar = ({ name }: NavbarProps) => {
         />
 
         {/* For desktop view */}
-        <section className="hidden md:block">
+        <section className="hidden lg:block">
           <Link className="my-8 ml-6 p-2" href="/products?tags=men">
             Men
           </Link>
@@ -39,17 +39,17 @@ const Navbar = ({ name }: NavbarProps) => {
 
       <section className="flex">
         <Searchbar />
-        <Link className="m-2 md:m-3 hidden md:block" href="/account">
+        <Link className="m-2 md:m-3 hidden lg:block" href="/account">
           <UserIcon className="h-5 w-5 text-gray-300 mx-auto mb-1" />
-          <Label className="hidden md:block text-xs">Profile</Label>
+          <Label className="hidden lg:block text-xs">Profile</Label>
         </Link>
         <Link className="m-2 md:m-3" href="/wishlist">
           <HeartIcon className="h-5 w-5 text-gray-300 mx-auto mb-1" />
-          <Label className="hidden md:block text-xs">Wishlist</Label>
+          <Label className="hidden lg:block text-xs">Wishlist</Label>
         </Link>
         <Link className="m-2 md:m-3" href="/bag">
           <ShoppingBagIcon className="h-5 w-5 text-gray-300 mx-auto mb-1" />
-          <Label className="hidden md:block text-xs">Bag</Label>
+          <Label className="hidden lg:block text-xs">Bag</Label>
         </Link>
       </section>
     </nav>
