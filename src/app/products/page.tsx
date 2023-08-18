@@ -8,7 +8,7 @@ type pageProps = {
 
 const page = ({ params: { category } }: pageProps) => {
   return (
-    <div className="flex flex-wrap lg:w-2/3 md:justify-center md:items-between">
+    <section className="flex flex-wrap lg:w-3/4 lg:items-between">
       <Product />
       <Product />
       <Product />
@@ -18,7 +18,7 @@ const page = ({ params: { category } }: pageProps) => {
       <Product />
       <Product />
       <Product />
-    </div>
+    </section>
   );
 };
 

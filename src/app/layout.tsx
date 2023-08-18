@@ -18,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "min-h-screen")}>
+      <body
+        className={cn(
+          inter.className,
+          "min-h-screen mx-auto max-w-screen-2xl overflow-x-hidden"
+        )}
+      >
         <Navbar name="varun" />
         {/* The below div is to mock the navbar */}
         <div className="mb-14 lg:mb-20" />
