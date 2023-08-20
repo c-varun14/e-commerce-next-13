@@ -21,12 +21,12 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "min-h-screen mx-auto max-w-screen-2xl overflow-x-hidden"
+          "min-h-screen mx-auto bg-[#FEFEFF] max-w-screen-2xl overflow-x-hidden"
         )}
       >
         <Navbar name="varun" />
         {/* The below div is to mock the navbar */}
-        <div className="mb-14 lg:mb-20" />
+        <div className="mb-14 md:mb-16 lg:mb-20" />
         {children}
       </body>
     </html>

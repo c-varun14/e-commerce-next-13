@@ -10,7 +10,7 @@ import { MenuIcon, User2Icon } from "lucide-react";
 const Sidebar = ({ name }: { name: string }) => {
   return (
     <Sheet>
-      <SheetTrigger className="lg:hidden inline">
+      <SheetTrigger className="ml-3 lg:hidden inline">
         <MenuIcon />
       </SheetTrigger>
       <SheetContent side="left" className="text-white p-0 m-0">

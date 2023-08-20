@@ -21,7 +21,7 @@ const Navbar = ({ name }: NavbarProps) => {
             alt="Verge"
             height={30}
             width={30}
-            className="ml-4 lg:ml-8 lg:h-12 lg:w-12 "
+            className="ml-4 lg:ml-8 lg:h-12 lg:w-12"
           />
 
           {/* For desktop view */}
